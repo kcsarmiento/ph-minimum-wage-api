@@ -45,6 +45,16 @@ def scrape_region(region_slug: str) -> dict:
         "kasambahay": parse_kasambahay_table(soup),
     }
 
+@app.get("/")
+def root():
+    return {
+        "name": "PH Minimum Wage API",
+        "docs": "/docs",
+        "health": "/health",
+        "regions": "/api/v1/regions",
+        "wages": "/api/v1/wages/{region}",
+    }
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
