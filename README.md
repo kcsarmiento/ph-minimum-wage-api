@@ -62,7 +62,7 @@ Open `http://localhost:8000/docs` for the interactive Swagger UI.
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [httpx](https://www.python-httpx.org/)
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
-- 
+  
 ## Data Source
 
 All wage data is sourced from the [National Wages and Productivity Commission (NWPC)](https://nwpc.dole.gov.ph/).
