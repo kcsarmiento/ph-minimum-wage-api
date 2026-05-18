@@ -1,5 +1,7 @@
 # PH Minimum Wage API
 
+**Live API:** https://ph-minimum-wage-api.onrender.com/
+
 A REST API that scrapes live minimum wage data per region in the Philippines from the official [NWPC-DOLE website](https://nwpc.dole.gov.ph/).
 
 ## Endpoints
@@ -62,7 +64,32 @@ Open `http://localhost:8000/docs` for the interactive Swagger UI.
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [httpx](https://www.python-httpx.org/)
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
+<<<<<<< HEAD
   
+=======
+
+## Deploying to Render
+
+1. Push your code to GitHub
+2. Go to [render.com](https://render.com) and create a free account
+3. Click **New → Web Service** and connect your GitHub repo
+4. Set the following:
+
+   | Setting | Value |
+   |---|---|
+   | Runtime | `Python 3` |
+   | Build Command | `pip install -r requirements.txt` |
+   | Start Command | `uvicorn app:app --host 0.0.0.0 --port $PORT` |
+
+5. Click **Create Web Service**
+
+Your API will be live at `https://your-app.onrender.com`.
+
+This project is deployed at: https://ph-minimum-wage-api.onrender.com/
+
+> **Note:** The free tier spins down after 15 minutes of inactivity. The first request after idle may take ~30 seconds.
+
+>>>>>>> 30ee108 (add live API link to README)
 ## Data Source
 
 All wage data is sourced from the [National Wages and Productivity Commission (NWPC)](https://nwpc.dole.gov.ph/).
